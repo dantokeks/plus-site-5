@@ -1,5 +1,5 @@
 const texts = [
-    "Herzlich willkommen!",
+    "Herzlich Willkommen!",
     "Es freut uns, Sie auf der agit2025 begrüßen zu dürfen. Diese Website wurde von DIG-Studenten der Uni Salzburg entwickelt, um Ihnen Ihren Aufenthalt zu erleichtern.",
     "Die Website enthält nützliche Informationen über die Konferenz, aber auch über die wunderschöne Stadt Salzburg, für einen schönen Tag, auch abseits der Konferenz.",
     "Um das AGIT-Konferenzprogramm, den Stadtplan von Salzburg oder den Marktplatz einzusehen und uns kennenzulernen, verwenden Sie bitte das Menü am oberen Bildschirmrand."

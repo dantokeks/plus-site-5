@@ -296,14 +296,106 @@ main {
   border: 1px solid #ddd;
 }
 
+.zeitentabelle {
+  margin-bottom: 20px;
+}
+
+.zeitentabelle table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.zeitentabelle th {
+  background-color: #f5f5f5;
+  color: #a77fc0;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+.zeitentabelle td {
+  padding: 10px;
+  color: #1f1b2e;
+}
+
+
 /* -------------------------KARTE-----------------------------------*/
 
-.karte-iframe{
-  width: 100%;
-  height: 450px;   /* можно менять на 400-600 */
+.karte-mit-text {
+  display: flex;
+  background-color: #f2dffc;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 0 auto 40px;
+  gap: 20px;
+  flex-wrap: nowrap; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 1200px;
+}
+
+.karte-links {
+  flex: 0 1 70%;
+  max-width: 70%; 
+}
+
+.karte-iframe {
+  width: 100%; 
+  height: 450px;
   border: 0;
   border-radius: 8px;
 }
+
+.karte-rechts {
+  flex: 0 1 30%;
+  max-width: 30%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bus-icon-text {
+  background-color: #ffffffd9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #3c2c4e;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bus-icon-text strong {
+  color: #7c3aad;
+  font-weight: 700;
+}
+
+.bus-icon-text em {
+  font-style: italic;
+  color: #5c3c78;
+}
+
+.bus-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+
+/* Адаптивность */
+@media (max-width: 900px) {
+  .karte-mit-text {
+    flex-direction: column;
+  }
+  .karte-links,
+  .karte-rechts {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
 
 /* ---------------  KONTAKT  --------------- */
 
@@ -416,7 +508,155 @@ main {
   color:#f8e8fb;              /* чуть светлее на ховер */
 }
 
+/*---------------------------------UEBER DIE WEBSEITE______________________*/
 
+.ueber-die-webseite {
+  background-color: #f9f4fb; /* нежно-фиолетовый, как в таблице */
+  border: 1px solid #e0d3ea;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #1f1b2e;
+}
+
+.ueber-die-webseite h2 {
+  font-size: 1.8em;
+  color: #a77fc0;
+  margin-bottom: 15px;
+}
+
+/*__________for phone________*/
+.menu-toggle {
+  display: none; /* по умолчанию — скрыта */
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: white;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+}
 
 /* кстати надо написать развертку для телефон */
 
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .site-title {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .subheader {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .intro-text {
+    margin: 1em;
+    padding: 1em;
+    font-size: 1em;
+  }
+
+  main {
+    padding: 1em;
+  }
+
+  .karte-mit-text {
+    flex-direction: column;
+  }
+
+  .karte-links,
+  .karte-rechts {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .bus-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .schedule-table {
+    padding: 1em;
+    overflow-x: auto;
+  }
+
+  .ueber-die-webseite {
+    padding: 1em;
+    margin: 1em;
+    font-size: 1em;
+  }
+
+  .email-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .sponsor-bar,
+  .sponsor-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-phone,
+  .contact-address {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .wrapper,
+  main,
+  .karte-mit-text,
+  .schedule-table,
+  .intro-text,
+  .ueber-die-webseite,
+  .kontakt,
+  .sponsors {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #af8dba;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .main-nav.active ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+}

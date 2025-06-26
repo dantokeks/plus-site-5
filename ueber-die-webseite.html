@@ -11,6 +11,9 @@
   <div class="wrapper">
 
     <header class="site-header">
+      <button class="menu-toggle" onclick="document.querySelector('.main-nav').classList.toggle('active')">
+        ☰
+      </button>
       
       <div class="logo-block">
         <a href="https://www.plus.ac.at/?lang=en" target="_blank">
@@ -28,7 +31,7 @@
       <nav class="main-nav">
         <ul>
           <li><a href="index.html">Startseite</a></li>
-          <li><a href="programm.html">Program</a></li>
+          <li><a href="programm.html">Programm</a></li>
           <li><a href="marktplatz.html">Marktplatz</a></li>
           <li><a href="karte.html">Karte</a></li>
           <li><a href="https://www.salzburg.info/" target="_blank">Stadt Salzburg</a></li>
@@ -41,8 +44,19 @@
     </header>
 
     <main>
-        UEBER DIE WEBSEITE
+      <section class="ueber-die-webseite">
+        <h2>Über die Webseite</h2>
+        <p>
+          Diese Website entstand im Rahmen eines Studienprojektes innerhalb des Studienganges
+          „Digitalisierung-Innovation-Gesellschaft“. Ziel des Projekts war es, eine auf Mobilgeräte
+          abgestimmte Website zu entwickeln, die den Besuchern und Besucherinnen der Konferenz ihren
+          Alltag auf dieser erleichtern soll. Teil der Projektgruppe waren vier Studenten des
+          Studienganges. Betreut wurde das Projekt von den Professoren Doktor Johannes Scholz und
+          Thomas Scheidergruber.
+        </p>
+      </section>
     </main>
+    
 
     <footer class="site-footer">
       <div class="footer-content">
@@ -51,7 +65,7 @@
           <a href="index.html">Startseite</a>
           <a href="kontakt.html">Kontakt</a>
           <a href="https://www.plus.ac.at/" target="_blank">PLUS Webseite</a>
-          <a href="sponsors.html">Sponsors</a>
+          <a href="sponsors.html">Sponsoren</a>
         </nav>
       </div>
     </footer>

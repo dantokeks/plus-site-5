@@ -12,6 +12,9 @@
   <div class="wrapper">
 
     <header class="site-header">
+      <button class="menu-toggle" onclick="document.querySelector('.main-nav').classList.toggle('active')">
+        ☰
+      </button>
       
       <div class="logo-block">
         <a href="https://www.plus.ac.at/?lang=en" target="_blank">
@@ -29,7 +32,7 @@
       <nav class="main-nav">
         <ul>
           <li><a href="index.html">Startseite</a></li>
-          <li><a href="programm.html">Program</a></li>
+          <li><a href="programm.html">Programm</a></li>
           <li><a href="marktplatz.html">Marktplatz</a></li>
           <li><a href="karte.html">Karte</a></li>
           <li><a href="https://www.salzburg.info/" target="_blank">Stadt Salzburg</a></li>
@@ -43,7 +46,24 @@
 
     <main>
       <h2 class="headline">Marktplatz Standplan:</h2>
-    
+
+      <div class="zeitentabelle">
+        <table>
+          <thead>
+            <tr>
+              <th>Bezug der Stände</th>
+              <th>Offizielle Öffnungszeiten</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dienstag, 1.7.2025 15.00 bis 18.00 Uhr<br>Mittwoch, 2.7.2025 9.00 bis 12.00 Uhr</td>
+              <td>Mittwoch, 2.7.2025 12.00 bis 18.00 Uhr<br>Donnerstag, 3.7.2025 9.00 bis 15.30 Uhr</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="karte-container">
         <img src="AGITPIC.jpg" alt="Standplan" class="karte-img">
       </div>
@@ -57,7 +77,7 @@
           <a href="index.html">Startseite</a>
           <a href="kontakt.html">Kontakt</a>
           <a href="https://www.plus.ac.at/" target="_blank">PLUS Webseite</a>
-          <a href="sponsors.html">Sponsors</a>
+          <a href="sponsors.html">Sponsoren</a>
         </nav>
       </div>
     </footer>
